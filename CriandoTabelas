@@ -1,0 +1,17 @@
+CREATE TABLE Cadastro (
+	id   INT  NOT NULL  AUTO_INCREMENT,
+	login   VARCHAR(32)  NOT NULL,
+	senha   VARCHAR(32)  NOT NULL,
+	PRIMARY KEY(id)
+);
+
+
+
+CREATE TABLE Tasks (
+	id  INT  NOT NULL  AUTO_INCREMENT,
+	user  VARCHAR(32)  NOT NULL,
+	nome  VARCHAR(32),
+	tarefa  VARCHAR(212),
+	data  DATE,
+	PRIMARY KEY(id)
+);
